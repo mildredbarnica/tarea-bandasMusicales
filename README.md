@@ -1,6 +1,6 @@
 # tarea-bandasMusicale
 
-##Introducción:
+## Introducción: 
 EL objetivo del proyecto es principakmente poner en prática todos los conocimiento adquiridos en la clase sistemas de información.
 ## Partes importantes del proyecto:
 1. La forma en que el proyect está compusto desde el inicio con carpetas que subdividen las partes de MVC,  es un aspecto clave que se nos ofrece al utilizar este tipo de plantillas que se nos ofrece.
