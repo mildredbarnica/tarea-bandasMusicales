@@ -1,0 +1,48 @@
+﻿@model tareaBandas.Models.Banda
+
+@{ 
+    ViewData["Title"] = "Agregar Banda";
+ }
+
+<h2>Agregar Nueva Banda</h2>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="BandaNombre" class="control-label"></label>
+                <input asp-for="BandaNombre" class="form-control" />
+                <span asp-validation-for="BandaNombre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BandaGenero" class="control-label"></label>
+                <input asp-for="BandaGenero" class="form-control" />
+                <span asp-validation-for="BandaGenero" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BandaSitioWeb" class="control-label"></label>
+                <input asp-for="BandaSitioWeb" class="form-control" />
+                <span asp-validation-for="BandaSitioWeb" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BandaVocalista" class="control-label"></label>
+                <input asp-for="BandaVocalista" class="form-control" />
+                <span asp-validation-for="BandaVocalista" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BandaInicio" class="control-label"></label>
+                <input asp-for="BandaInicio" class="form-control" />
+                <span asp-validation-for="BandaInicio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Guardar" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-warning">Regresar</a>
+            </div>
+        </form>
+
+    </div>
+
+</div>
+

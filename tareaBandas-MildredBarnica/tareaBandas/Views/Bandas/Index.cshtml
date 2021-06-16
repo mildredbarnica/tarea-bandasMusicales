@@ -1,0 +1,38 @@
+﻿@model IEnumerable<tareaBandas.Models.Banda>
+
+@{ 
+    ViewData["Title"] = "Bandas";
+}
+ 
+<h2>Lista de Bandas</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-success" ><i class="fas fa-file"></i>Nuevo</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.BandaNombre)
+            </th>
+            <th></th>
+
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+	{
+		 <tr>
+             <td>@Html.DisplayFor(modelItem => item.BandaNombre)</td>
+             <td>
+                 <a asp-action="Edit" class="btn btn-warning" asp-route-id="@item.BandaId"><i class="fas fa-edit"></i>Editar</a>
+                 <a asp-action="Details" class="btn btn-success" asp-route-id="@item.BandaId"><i class="fas fa-info-circle"></i>Detalles</a>
+                 <a asp-action="Delete" class="btn btn-danger" asp-route-id="@item.BandaId"><i class="fas fa-trash-alt"></i>Borrar</a>
+             </td>
+
+         </tr>
+	}
+    </tbody>
+</table>
