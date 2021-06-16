@@ -1,4 +1,4 @@
-# tarea-bandasMusicale
+# tarea-bandasMusicales
 
 ## Introducción: 
 EL objetivo del proyecto es principalmente poner en prática todos los conocimiento adquiridos en la clase sistemas de información.
